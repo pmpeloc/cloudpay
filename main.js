@@ -3,7 +3,7 @@
 if('serviceWorker' in navigator){
   console.log('Puedes usar los serviceWorker en tu navegador');
 
-  navigator.serviceWorker.register('./sw.js')
+  navigator.serviceWorker.register('./swcloud.js')
                          .then(res => console.log('serviceWorker cargado correctamente', res))
                          .catch(err => console.log('serviceWorker no se ha podido registrar', err));
 } else {
